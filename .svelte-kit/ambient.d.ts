@@ -26,49 +26,43 @@
  * ```
  */
 declare module '$env/static/private' {
-	export const POSTGRES_DATABASE: string;
-	export const POSTGRES_HOST: string;
-	export const POSTGRES_PASSWORD: string;
-	export const POSTGRES_PRISMA_URL: string;
-	export const POSTGRES_URL: string;
-	export const POSTGRES_URL_NON_POOLING: string;
-	export const POSTGRES_URL_NO_SSL: string;
-	export const POSTGRES_USER: string;
-	export const MANPATH: string;
 	export const LDFLAGS: string;
+	export const MANPATH: string;
 	export const TERM_PROGRAM: string;
 	export const NODE: string;
+	export const INIT_CWD: string;
 	export const ANDROID_HOME: string;
 	export const TERM: string;
 	export const SHELL: string;
-	export const TMPDIR: string;
-	export const HOMEBREW_REPOSITORY: string;
 	export const CPPFLAGS: string;
+	export const HOMEBREW_REPOSITORY: string;
+	export const TMPDIR: string;
 	export const TERM_PROGRAM_VERSION: string;
+	export const ZDOTDIR: string;
 	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
 	export const MallocNanoZone: string;
-	export const ZDOTDIR: string;
-	export const ZSH: string;
 	export const npm_config_local_prefix: string;
+	export const ZSH: string;
 	export const USER: string;
 	export const LS_COLORS: string;
 	export const COMMAND_MODE: string;
 	export const SSH_AUTH_SOCK: string;
 	export const __CF_USER_TEXT_ENCODING: string;
 	export const npm_execpath: string;
+	export const BUN_WHICH_IGNORE_CWD: string;
 	export const PAGER: string;
 	export const LSCOLORS: string;
 	export const PATH: string;
-	export const _: string;
 	export const npm_package_json: string;
-	export const __CFBundleIdentifier: string;
+	export const _: string;
 	export const USER_ZDOTDIR: string;
+	export const __CFBundleIdentifier: string;
 	export const PWD: string;
-	export const npm_lifecycle_event: string;
 	export const npm_package_name: string;
 	export const LANG: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const XPC_FLAGS: string;
+	export const npm_config_node_gyp: string;
 	export const npm_package_version: string;
 	export const XPC_SERVICE_NAME: string;
 	export const VSCODE_INJECTION: string;
@@ -84,9 +78,8 @@ declare module '$env/static/private' {
 	export const GIT_ASKPASS: string;
 	export const INFOPATH: string;
 	export const HOMEBREW_CELLAR: string;
-	export const COLORTERM: string;
 	export const npm_node_execpath: string;
-	export const NODE_ENV: string;
+	export const COLORTERM: string;
 }
 
 /**
@@ -118,49 +111,43 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
-		POSTGRES_DATABASE: string;
-		POSTGRES_HOST: string;
-		POSTGRES_PASSWORD: string;
-		POSTGRES_PRISMA_URL: string;
-		POSTGRES_URL: string;
-		POSTGRES_URL_NON_POOLING: string;
-		POSTGRES_URL_NO_SSL: string;
-		POSTGRES_USER: string;
-		MANPATH: string;
 		LDFLAGS: string;
+		MANPATH: string;
 		TERM_PROGRAM: string;
 		NODE: string;
+		INIT_CWD: string;
 		ANDROID_HOME: string;
 		TERM: string;
 		SHELL: string;
-		TMPDIR: string;
-		HOMEBREW_REPOSITORY: string;
 		CPPFLAGS: string;
+		HOMEBREW_REPOSITORY: string;
+		TMPDIR: string;
 		TERM_PROGRAM_VERSION: string;
+		ZDOTDIR: string;
 		ORIGINAL_XDG_CURRENT_DESKTOP: string;
 		MallocNanoZone: string;
-		ZDOTDIR: string;
-		ZSH: string;
 		npm_config_local_prefix: string;
+		ZSH: string;
 		USER: string;
 		LS_COLORS: string;
 		COMMAND_MODE: string;
 		SSH_AUTH_SOCK: string;
 		__CF_USER_TEXT_ENCODING: string;
 		npm_execpath: string;
+		BUN_WHICH_IGNORE_CWD: string;
 		PAGER: string;
 		LSCOLORS: string;
 		PATH: string;
-		_: string;
 		npm_package_json: string;
-		__CFBundleIdentifier: string;
+		_: string;
 		USER_ZDOTDIR: string;
+		__CFBundleIdentifier: string;
 		PWD: string;
-		npm_lifecycle_event: string;
 		npm_package_name: string;
 		LANG: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		XPC_FLAGS: string;
+		npm_config_node_gyp: string;
 		npm_package_version: string;
 		XPC_SERVICE_NAME: string;
 		VSCODE_INJECTION: string;
@@ -176,9 +163,8 @@ declare module '$env/dynamic/private' {
 		GIT_ASKPASS: string;
 		INFOPATH: string;
 		HOMEBREW_CELLAR: string;
-		COLORTERM: string;
 		npm_node_execpath: string;
-		NODE_ENV: string;
+		COLORTERM: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}

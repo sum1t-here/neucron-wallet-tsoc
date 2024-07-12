@@ -1,10 +1,12 @@
 import { Root } from "../../contracts/root";
 import { DefaultProvider, sha256, bsv, toByteString } from "scrypt-ts";
 import { NeucronSigner } from "neucron-signer";
+import artifact from "../../../artifacts/root.json";
 
 const provider = new DefaultProvider({ network: bsv.Networks.mainnet });
 const signer = new NeucronSigner(provider);
 await signer.login("sales@timechainlabs.io", "string");
+await Root.loadArtifact(artifact);
 let instance: any;
 
 export const actions = {
